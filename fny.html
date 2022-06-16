@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+
+
+.left-bottle {
+  width: 200px;
+  height: 500px;
+
+ 
+  position: relative;
+  animation-name:left-bottle;
+  animation-duration: 10s;
+  background: url(bottle.png);
+  left:500px; 
+  top:0px;
+  transform: rotate(-20deg)
+
+}
+
+@keyframes left-bottle{
+  0%   { background: url(bottle.png); left:00px; top:0px;transform: rotate(0deg);}
+  25%  { background: url(bottle.png) ; left:500px; top:0px;transform: rotate(0deg);}
+  50%  { background: url(bottle.png) ; left:500px; top:0px;transform: rotate(-20deg);}
+  
+
+  
+
+}
+.right-bottle{
+  width: 200px;
+  height: 500px;
+ 
+  position: relative;
+  animation-name:right-bottle;
+  animation-duration: 10s;
+  background: url(bottle.png);
+  left:590px;
+  top:-500px;
+  transform: rotate(20deg)
+  
+
+}
+
+@keyframes right-bottle {
+  0%   { background: url(bottle.png); left:1200px; top:-500px;transform: rotate(0deg);}
+  25%  { background: url(bottle.png) ; left:590px; top:-500px;transform: rotate(0deg);}
+  50%  { background: url(bottle.png) ; left:590px; top:-500px;transform: rotate(20deg);}
+  
+
+ 
+
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="left-bottle"></div>
+<div class="right-bottle"></div>
+
+
+</body>
+</html>
+
+
